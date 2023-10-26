@@ -5,7 +5,7 @@
 body {
     overflow-x: hidden;
     min-height: 100vh;
-    background-color: #00000010;
+    background-image: linear-gradient(to right, #d072f03b, white, #d072f03b );
     font-family: 'Playpen Sans', cursive;
 }
 header {
@@ -19,25 +19,17 @@ header {
 header div {
     width: 50%;
 }
-.navbar nav ul {
-    display: flex;
-    justify-content: space-around;
-}
-.navbar nav ul li {
-    list-style-type: none;
-}
-.navbar nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    padding: 0.5rem 1rem;
-    color: white;
-}
-.navbar nav ul li a:hover {
-    transition: 0.5s;
-    box-shadow: 1px 1px 5px silver;
-    transform: scale(1.1);
+.span-title {
     color: violet;
+    text-shadow: none;
+}
+.logo {
+    width: 50%;
+}
+.logo h2 {
+    text-align: center;
+    line-height: 20vh;
+    text-shadow: 1px 1px 5px white;
 }
 /*search e cart*/
 .cart {
@@ -53,8 +45,6 @@ header div {
     color: violet;
     transform: scale(1.1);
     border-radius: 5px;
-    border: 1px solid blue;
-    box-shadow: 1px 1px 1px blue;
     transition: 1s;
 }
 /*Search*/
@@ -137,19 +127,9 @@ footer {
     border: 1px solid silver;
     border-radius: 5px;
     outline: 0;
-    margin-top: 25%;
-    color: blue;
+    margin-top: 5rem;
+    color: silver;
     font-size: 18px;
-    animation: fundoInputSearch 5s infinite;
-}
-@keyframes fundoInputSearch {
-    0%, 
-    100% {
-        box-shadow: 1px 1px 100px blue;
-    }
-    50% {
-        box-shadow: 1px 1px 100px violet;
-    }
 }
 @media(max-width:768px) {
     .navbar {
@@ -170,9 +150,6 @@ footer {
     .container-main div {
         width: 90%;
         padding: 0.5rem;
-    }
-    header div {
-        width: 100%;
     }
     
 }
