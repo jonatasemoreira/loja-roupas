@@ -134,10 +134,45 @@ footer {
     height: 50px;
     width: 300px;
     text-align: center;
-    border: 1px solid silver;border-radius: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
     outline: 0;
     margin-top: 25%;
-    box-shadow: 1px 1px 10px violet;
     color: blue;
     font-size: 18px;
+    animation: fundoInputSearch 5s infinite;
+}
+@keyframes fundoInputSearch {
+    0%, 
+    100% {
+        box-shadow: 1px 1px 100px blue;
+    }
+    50% {
+        box-shadow: 1px 1px 100px violet;
+    }
+}
+@media(max-width:768px) {
+    .navbar {
+        display: none;
+    }
+    .section-slide-search {
+        display: flex;
+        flex-direction: column;
+    }
+    .search-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .search-container input {
+        margin: 0;
+    }
+    .container-main div {
+        width: 90%;
+        padding: 0.5rem;
+    }
+    header div {
+        width: 100%;
+    }
+    
 }
